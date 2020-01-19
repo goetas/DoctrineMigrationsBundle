@@ -82,7 +82,7 @@ application:
         # Path to your custom migrations template
         custom_template: ~
 
-        Run all migrations in a transaction.
+        # Run all migrations in a transaction.
         all_or_nothing: false
 
         # Adds an extra check in the generated migrations to ensure that is executed on the same database type.
