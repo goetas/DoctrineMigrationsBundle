@@ -45,7 +45,7 @@ application:
     doctrine_migrations:
         name: 'Application Migrations'
 
-        # List of pairs namespace/path to search for migrations, one required
+        # List of namespace/path pairs to search for migrations, at least one required
         migrations_paths:
             'App\Migrations': 'src/App'
             'AnotherApp\Migrations': '/path/to/other/migrations'
@@ -102,7 +102,7 @@ All of the migrations functionality is contained in a few console commands:
      doctrine:migrations:generate               [generate] Generate a blank migration class.
      doctrine:migrations:latest                 [latest] Outputs the latest version number
      doctrine:migrations:migrate                [migrate] Execute a migration to a specified version or the latest available version.
-     doctrine:migrations:rollup                 [rollup] Rollup migrations by deleting all tracked versions and insert the one version that exists.
+     doctrine:migrations:rollup                 [rollup] Roll migrations up by deleting all tracked versions and insert the one version that exists.
      doctrine:migrations:status                 [status] View the status of a set of migrations.
      doctrine:migrations:up-to-date             [up-to-date] Tells you if your schema is up-to-date.
      doctrine:migrations:version                [version] Manually add and delete migration versions from the version table.

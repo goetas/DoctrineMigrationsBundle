@@ -97,7 +97,9 @@ class DoctrineMigrationsExtension extends Extension
         }
 
         if ($config['em'] !== null && $config['connection'] !== null) {
-            throw new InvalidArgumentException('You can not specify both "connection" and "em" in the DoctrineMigrationsBundle configurations.');
+            throw new InvalidArgumentException(
+                'You cannot specify both "connection" and "em" in the DoctrineMigrationsBundle configurations.'
+            );
         }
 
         $emID = $config['em'] !== null ? sprintf('doctrine.orm.%s_entity_manager', $config['em']) : null;

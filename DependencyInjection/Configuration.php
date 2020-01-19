@@ -54,7 +54,7 @@ class Configuration implements ConfigurationInterface
                     ->defaultValue(['%kernel.project_dir%/src/Migrations' => 'App\Migrations'])
                     ->prototype('scalar')->end()
                     ->validate()
-                        ->ifTrue(static function ($v) {
+                        ->ifTrue(static function (array $v) : bool {
                             return count($v) === 0;
                         })
                         ->thenInvalid('At least one migrations path must be specified.')
