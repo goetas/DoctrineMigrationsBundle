@@ -105,7 +105,7 @@ class Configuration implements ConfigurationInterface
                     ->defaultValue(false)
                 ->end()
                 ->scalarNode('check_database_platform')
-                    ->info('Adds an extra check in the generated migrations to ensure that is executed on the same database type.')
+                    ->info('Adds an extra check in the generated migrations to ensure that only allows execution on the same platform they were generated on.')
                     ->defaultValue(true)
                 ->end()
                 ->scalarNode('custom_template')
