@@ -116,7 +116,7 @@ the ``status`` command:
     $ php bin/console doctrine:migrations:status
 
 This command will show you generic information about the migration status, as how many migrations have been
-already executed, which still needs to run, and the database in use.
+already executed, which still need to run, and the database in use.
 
 Now, you can start working with migrations by generating a new blank migration
 class. Later, you'll learn how Doctrine can generate migrations automatically
