@@ -208,7 +208,7 @@ You can skip single migrations by explicitly adding them to the ``migration_vers
 
 .. tip::
 
-    Pay attention for the single quotes (``'``) used in the command above, without them
+    Pay attention to the single quotes (``'``) used in the command above, without them
     or with the double quotes (``"``) the command will not work properly.
 
 
